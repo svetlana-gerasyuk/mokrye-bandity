@@ -148,9 +148,11 @@
       test.onload = () => {
         if(!test.naturalWidth) return;
         img.src = path; link.href = path;
-        img.alt = `Предоставленная фотография автомойки, № ${Number(id)}`;
-        card.querySelector('[data-gallery-caption]').textContent = `Фото автомойки № ${Number(id)}`;
-        card.querySelector('[data-gallery-meta]').textContent = 'Предоставлено правообладателем для сайта';
+        img.alt = 'Фото автомойки «Мокрые бандиты»';
+        const cap = card.dataset.caption;
+        card.querySelector('[data-gallery-caption]').textContent = cap || `Фото автомойки № ${Number(id)}`;
+        const meta = card.dataset.meta;
+        card.querySelector('[data-gallery-meta]').textContent = meta || 'Фото из сообщества ВКонтакте';
       };
       test.onerror = tryNext;
       test.src = path;
