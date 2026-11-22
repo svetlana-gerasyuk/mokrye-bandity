@@ -127,3 +127,40 @@
 .poll-copy h2 span{color:var(--blue)}
 .poll-copy p{color:#a7b7c6;margin:0 0 24px;max-width:46ch;line-height:1.75;font-size:15px}
 @media(max-width:800px){.poll-card{grid-template-columns:1fr}.poll-media{max-width:420px}}
+
+
+/* REVIEWS SECTION: START — проверенные отзывы Яндекс Карт */
+.customer-reviews{position:relative;padding-top:105px;padding-bottom:100px}
+.customer-reviews__heading>div{max-width:840px}
+.customer-reviews__heading h2{font-size:clamp(34px,4.7vw,65px);line-height:1.12}
+.customer-reviews__heading>p{max-width:370px}
+.customer-reviews__layout{display:grid;grid-template-columns:minmax(255px,0.83fr) minmax(0,1.8fr);gap:16px;align-items:stretch}
+.customer-reviews__rating{border-radius:12px;padding:30px;background:linear-gradient(145deg,#062746 0%,#0e1e31 50%,#0c1725 100%);border:1px solid rgba(67,171,253,.38);box-shadow:0 20px 50px #0002;display:flex;flex-direction:column;align-items:start}
+.customer-reviews__source{font-size:12px;font-weight:800;color:#c8dfff;letter-spacing:.03em;display:flex;align-items:center;gap:10px}
+.customer-reviews__source-dot{width:9px;height:9px;border-radius:50%;background:#25a7ff;box-shadow:0 0 0 5px rgba(37,167,255,.15)}
+.customer-reviews__number{font-family:var(--head,'Russo One',sans-serif);font-size:clamp(65px,7.6vw,105px);font-weight:400;line-height:1;margin:24px 0 12px;color:#fff;letter-spacing:-.045em}
+.customer-reviews__number span{font-family:var(--body,Arial,sans-serif);font-size:18px;font-weight:800;letter-spacing:0;color:#97b8d2}
+.customer-reviews__stars{color:#ffd16a;letter-spacing:.13em;font-size:19px}
+.customer-reviews__total{margin:15px 0 22px;font-size:13px;line-height:1.7;color:#b3c5d5}
+.customer-reviews__total strong{color:#fff}
+.customer-reviews__award{display:flex;align-items:center;gap:13px;background:rgba(18,154,255,.1);border:1px solid rgba(109,189,248,.25);border-radius:8px;padding:12px 14px;width:100%;margin-top:auto}
+.customer-reviews__award>span{font-size:27px;color:#61c3ff}
+.customer-reviews__award strong{display:block;font-size:12px;color:#e9f7ff}
+.customer-reviews__award small{display:block;font-size:11px;color:#8fb7d3;margin-top:3px}
+.customer-reviews__viewall{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;font-weight:800;font-size:12px;color:#81cfff;padding-top:22px}
+.customer-reviews__viewall:hover{color:#fff}
+.customer-reviews__viewall span{font-size:19px}
+.customer-reviews__cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.customer-review{position:relative;display:flex;flex-direction:column;min-width:0;border-radius:12px;padding:28px;background:linear-gradient(145deg,#122338 0%,#0c1623 100%);border:1px solid rgba(134,186,227,.18)}
+.customer-review__quote-mark{font-family:Georgia,serif;font-size:85px;line-height:.72;color:#38adff;opacity:.86;height:57px}
+.customer-review blockquote{font-size:clamp(18px,1.45vw,23px);font-weight:800;line-height:1.42;color:#f6fbff;letter-spacing:-.02em;margin:8px 0 16px}
+.customer-review__summary{font-size:13px;color:#a8bed0;line-height:1.8;margin:0 0 24px}
+.customer-review__footer{display:flex;gap:14px;align-items:end;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:17px;margin-top:auto}
+.customer-review__footer strong{font-size:12px;color:#e9f6ff;display:block}
+.customer-review__footer small{font-size:11px;color:#8da7bb;display:block;margin-top:4px}
+.customer-review__footer a{font-size:12px;color:#7acbff;font-weight:800;white-space:nowrap}
+.customer-review__footer a:hover{text-decoration:underline}
+.customer-reviews__disclaimer{max-width:900px;margin:18px 0 0;font-size:11px;color:#7890a5;line-height:1.7}
+@media(max-width:1050px){.customer-reviews__layout{grid-template-columns:1fr}.customer-reviews__rating{display:grid;grid-template-columns:auto 1fr;gap:9px 24px}.customer-reviews__source,.customer-reviews__award,.customer-reviews__viewall{grid-column:1/-1}.customer-reviews__number{font-size:68px;margin:12px 0 0}.customer-reviews__stars{align-self:end;margin-bottom:12px}.customer-reviews__total{grid-column:1/-1;margin:0 0 10px}}
+@media(max-width:640px){.customer-reviews{padding-top:65px;padding-bottom:70px}.customer-reviews__heading h2{font-size:clamp(32px,8.5vw,45px)}.customer-reviews__cards{grid-template-columns:1fr}.customer-reviews__rating,.customer-review{padding:21px}.customer-review blockquote{font-size:19px}.customer-reviews__stars{letter-spacing:.07em}.customer-review__footer{align-items:start}.customer-reviews__layout{gap:12px}}
+/* REVIEWS SECTION: END */
